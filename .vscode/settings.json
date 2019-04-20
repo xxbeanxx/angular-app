@@ -2,11 +2,6 @@
     "typescript.tsdk": "node_modules/typescript/lib",
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
-    "files.watcherExclude": {
-        "**/.git/objects/**": true,
-        "**/.git/subtree-cache/**": true,
-        "**/node_modules/**": true
-    },
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
