@@ -1,0 +1,32 @@
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
+    <a routerLink="/" class="navbar-brand">Angular App</a>
+    <button (click)="mobileCollapsed = !mobileCollapsed" class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div [ngbCollapse]="mobileCollapsed" class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li routerLinkActive="active" class="nav-item">
+          <a routerLink="/servers" routerLinkActive="active" class="nav-link">Servers</a>
+        </li>
+        <li ngbDropdown class="nav-item">
+          <a ngbDropdownToggle class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a ngbDropdownItem class="dropdown-item" href="#">Action</a>
+            <a ngbDropdownItem class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a ngbDropdownItem class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-success my-2 my-sm-0" type="submit">
+          <fa-icon [icon]="searchIcon"></fa-icon>
+        </button>
+      </form>
+    </div>
+  </nav>
+</header>
